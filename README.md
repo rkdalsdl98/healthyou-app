@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
-  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/a2f4646e-aed2-4eb3-a307-7afb35ebcb44">
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/a2f4646e-aed2-4eb3-a307-7afb35ebcb44" width="50">
 </div>
 
 # 개요  
@@ -22,6 +22,12 @@
   <img src="https://github.com/rkdalsdl98/healthyou-server/assets/77562358/333640b0-62f6-4fbb-8efb-d2c69f19629d">
   <img src="https://github.com/rkdalsdl98/healthyou-server/assets/77562358/a4165bff-47d3-4849-ae53-9b28bbccc040">
 </div>
+
+# Pigma  
+
+[Healthyou! Pigma](https://www.figma.com/file/5P0mcLR7LmEWwI0lT2kEmt/Heathyou?type=design&node-id=1-2&mode=design&t=GsyzifDPLn7kGGrf-0)  
+
+피그마에 현재 어플에 구현되어있는 UI가 적용되어 있는 부분이 상당수가 있습니다.
 
 #  Server  
 
