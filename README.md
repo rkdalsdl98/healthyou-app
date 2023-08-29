@@ -25,16 +25,13 @@
   <img src="https://github.com/rkdalsdl98/healthyou-server/assets/77562358/a4165bff-47d3-4849-ae53-9b28bbccc040">
 </div>
 
-# Pigma  
+# Figma  
 
-[Healthyou! Pigma](https://www.figma.com/file/5P0mcLR7LmEWwI0lT2kEmt/Heathyou?type=design&node-id=1-2&mode=design&t=GsyzifDPLn7kGGrf-0)  
+[Healthyou! Figma](https://www.figma.com/file/5P0mcLR7LmEWwI0lT2kEmt/Heathyou?type=design&node-id=1-2&mode=design&t=GsyzifDPLn7kGGrf-0)  
 
 피그마에 현재 어플에 구현되어있는 UI가 적용되어 있는 부분이 상당수가 있습니다.
 
 # 주저리  
 
 Diagram, Pattern, Architecture 등등 모자란 부분이 많고 미숙한 부분도 많습니다.  
-
-리뷰, 사용후기, 지적사항 등등 아래 메일주소로 보내주시면 감사하게 받고 고치도록 하겠습니다.  
-
-rkdalsdl98@naver.com
+구글 플레이 스토어에 게시 검토중에 있으며 활성 되면 주소도 업데이트 하겠습니다.
