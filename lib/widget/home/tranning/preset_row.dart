@@ -24,11 +24,15 @@ class PresetRow extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(left: 10, bottom: 10),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          DefaultDropDownButton(
-            currValue: currCategory,
-            setCurrValue: onChangeRow,
-            items: const ["무산소", "유산소"],
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 5),
+            child: DefaultDropDownButton(
+              currValue: currCategory,
+              setCurrValue: onChangeRow,
+              items: const ["무산소", "유산소"],
+            ),
           ),
           if (currCategory == "무산소")
             PresetDialogItem.inputDialogItemByWeightTraning(

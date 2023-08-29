@@ -32,20 +32,25 @@ class _RegisterMealState extends State<RegisterMeal> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
-        child: CustomScrollView(
-          slivers: [
-            MealCountBox(
-              onChangeLen: setPageLen,
-              currLen: len,
-            ),
-            RegisterMealPresetPageView(currLen: len),
-            const TotalNutrition(),
-            const BottomWrapper(),
-          ],
+    return WillPopScope(
+      onWillPop: () async {
+        return await Future<bool>.value(false);
+      },
+      child: Scaffold(
+        backgroundColor: Theme.of(context).colorScheme.background,
+        body: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 10),
+          child: CustomScrollView(
+            slivers: [
+              MealCountBox(
+                onChangeLen: setPageLen,
+                currLen: len,
+              ),
+              RegisterMealPresetPageView(currLen: len),
+              const TotalNutrition(),
+              const BottomWrapper(),
+            ],
+          ),
         ),
       ),
     );

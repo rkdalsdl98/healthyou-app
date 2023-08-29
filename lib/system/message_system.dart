@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 import '../design/dimensions.dart';
@@ -91,5 +93,47 @@ class MessageSystem {
       ),
       duration: const Duration(seconds: 2),
     ));
+  }
+
+  static Future<void> initWillPopMessage(
+    BuildContext context,
+  ) async {
+    await showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text(
+          '앱을 완전히 종료 하시겠습니까?',
+          style: TextStyle(
+            fontSize: 14,
+          ),
+        ),
+        actions: [
+          TextButton(
+            child: Text(
+              '예',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onBackground,
+                fontSize: 10 * getScaleFactorFromWidth(context),
+                fontFamily: 'SpoqaHanSans',
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            onPressed: () => exit(0),
+          ),
+          TextButton(
+            child: Text(
+              '아니오',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onBackground,
+                fontSize: 10 * getScaleFactorFromWidth(context),
+                fontFamily: 'SpoqaHanSans',
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            onPressed: () => Navigator.pop(context),
+          ),
+        ],
+      ),
+    );
   }
 }

@@ -3,6 +3,7 @@ import 'package:healthyou_app/design/dimensions.dart';
 import 'package:healthyou_app/provider/meal_provider.dart';
 import 'package:healthyou_app/provider/traning_provider.dart';
 import 'package:healthyou_app/provider/user_provider.dart';
+import 'package:healthyou_app/system/message_system.dart';
 import 'package:healthyou_app/widget/home/update_dialog.dart';
 import 'package:provider/provider.dart';
 
@@ -96,30 +97,36 @@ class _HomeState extends State<Home> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          Container(
-            margin:
-                EdgeInsets.only(left: 44 * getScaleFactorFromWidth(context)),
-            child: IndexedStack(
-              index: selectedMenuIndex,
-              children: const [
-                Info(),
-                Traning(),
-                Meal(),
-                Calendar(),
-                Settings(),
-              ],
+    return WillPopScope(
+      onWillPop: () async {
+        await MessageSystem.initWillPopMessage(context);
+        return false;
+      },
+      child: Scaffold(
+        body: Stack(
+          children: [
+            Container(
+              margin:
+                  EdgeInsets.only(left: 44 * getScaleFactorFromWidth(context)),
+              child: IndexedStack(
+                index: selectedMenuIndex,
+                children: const [
+                  Info(),
+                  Traning(),
+                  Meal(),
+                  Calendar(),
+                  Settings(),
+                ],
+              ),
             ),
-          ),
-          SideBar(
-            onPressMenuIcon: setSelectedMenuIndex,
-            selectedMenuIndex: selectedMenuIndex,
-          ),
-        ],
+            SideBar(
+              onPressMenuIcon: setSelectedMenuIndex,
+              selectedMenuIndex: selectedMenuIndex,
+            ),
+          ],
+        ),
+        backgroundColor: Theme.of(context).colorScheme.background,
       ),
-      backgroundColor: Theme.of(context).colorScheme.background,
     );
   }
 }

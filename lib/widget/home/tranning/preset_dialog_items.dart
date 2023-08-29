@@ -90,7 +90,7 @@ class _PresetDialogItemsState extends State<PresetDialogItems> {
                 ),
         SizedBox(
           width: double.maxFinite,
-          height: 40 * getScaleFactorFromHeight(context),
+          height: 45 * getScaleFactorFromHeight(context),
           child: PresetRow(
             currCategory: widget.currCategory,
             onSaveData: saveData,

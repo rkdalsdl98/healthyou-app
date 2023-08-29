@@ -272,10 +272,12 @@ Widget inputHelper(
   TextInputType? inputType,
   String? hintText,
   double? width,
+  double? height,
   Function(String, dynamic)? onSaveData,
 }) {
   return SizedBox(
     width: (width ?? 45) * getScaleFactorFromWidth(context),
+    height: height,
     child: TextFormField(
       onSaved: (value) {
         if (onSaveData != null) {

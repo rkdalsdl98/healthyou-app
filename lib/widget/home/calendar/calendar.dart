@@ -105,54 +105,58 @@ class _CalendarState extends State<Calendar> {
     return Consumer<CalendarProvider>(builder: (_, provider, __) {
       final selectedEvents = provider.selectedEvents;
       events = provider.events;
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          CalendarBody(
-            selectedDay: selectedDay!,
-            focusedDay: focusedDay,
-            calendarFormat: calendarFormat,
-            onDaySelected: onDaySelected,
-            onFormatChange: onFormatChange,
-            onPageChange: onPageChange,
-            eventLoader: getEvent,
-          ),
-          Expanded(
-            child: ListView.builder(
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              itemCount: selectedEvents.length,
-              itemBuilder: (context, index) => CalendarMemo(
-                memo: selectedEvents[index],
-                notifyIndex: index + 1,
-                onRemoveMemo: onRemoveMemo,
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            CalendarBody(
+              selectedDay: selectedDay!,
+              focusedDay: focusedDay,
+              calendarFormat: calendarFormat,
+              onDaySelected: onDaySelected,
+              onFormatChange: onFormatChange,
+              onPageChange: onPageChange,
+              eventLoader: getEvent,
+            ),
+            Expanded(
+              child: ListView.builder(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                itemCount: selectedEvents.length,
+                itemBuilder: (context, index) => CalendarMemo(
+                  memo: selectedEvents[index],
+                  notifyIndex: index + 1,
+                  onRemoveMemo: onRemoveMemo,
+                ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                RoundedButtonMedium(
-                  text: "도움말",
-                  onPressEvent: () => showHelpDialog(context),
-                  margin: const EdgeInsets.symmetric(horizontal: 10),
-                ),
-                FloatingActionButton(
-                  onPressed: showAddMemoDialog,
-                  mini: true,
-                  backgroundColor:
-                      Theme.of(context).colorScheme.primaryContainer,
-                  child: Icon(
-                    Icons.add,
-                    size: 18 * getScaleFactorFromWidth(context),
-                    color: Theme.of(context).colorScheme.onPrimaryContainer,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  RoundedButtonMedium(
+                    text: "도움말",
+                    onPressEvent: () => showHelpDialog(context),
+                    margin: const EdgeInsets.symmetric(horizontal: 10),
                   ),
-                ),
-              ],
+                  FloatingActionButton(
+                    onPressed: showAddMemoDialog,
+                    mini: true,
+                    backgroundColor:
+                        Theme.of(context).colorScheme.primaryContainer,
+                    child: Icon(
+                      Icons.add,
+                      size: 18 * getScaleFactorFromWidth(context),
+                      color: Theme.of(context).colorScheme.onPrimaryContainer,
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       );
     });
   }

@@ -134,103 +134,108 @@ class ScheduleDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider<TimerProvider>(
-      create: (_) => TimerProvider(repository: TimerRepository()),
-      child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
-        body: CustomScrollView(
-          slivers: [
-            SliverToBoxAdapter(
-              child: Column(
-                children: [
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 30, right: 20),
-                      child: RoundedIconButtonMedium(
-                        icon: Icon(
-                          Icons.close,
+    return WillPopScope(
+      onWillPop: () async {
+        return await Future<bool>.value(false);
+      },
+      child: ChangeNotifierProvider<TimerProvider>(
+        create: (_) => TimerProvider(repository: TimerRepository()),
+        child: Scaffold(
+          backgroundColor: Theme.of(context).colorScheme.background,
+          body: CustomScrollView(
+            slivers: [
+              SliverToBoxAdapter(
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 30, right: 20),
+                        child: RoundedIconButtonMedium(
+                          icon: Icon(
+                            Icons.close,
+                            color: Theme.of(context)
+                                .colorScheme
+                                .onBackground
+                                .withOpacity(.5),
+                            size: 12 * getScaleFactorFromWidth(context),
+                          ),
+                          onPressEvent: () =>
+                              Navigator.popAndPushNamed(context, "/home"),
+                        ),
+                      ),
+                    ),
+                    ScheduleDetailBody(
+                      preset: schedule.schedule!,
+                      daily: schedule.daily!,
+                      onComplete: increaseCompletes,
+                      onUnComplete: decreaseCompletes,
+                    ),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 40, bottom: 40),
+                        child: RoundedButtonMedium(
+                          text: "완료",
+                          onPressEvent: () {
+                            if (DateTypes.DAYS[DateTime.now().weekday] !=
+                                schedule.daily) {
+                              notAvailableToday(context);
+                              return;
+                            }
+                            final items = schedule.schedule!.presetItems;
+                            if (items == null) {
+                              Navigator.popAndPushNamed(context, "/home");
+                            }
+
+                            final newState =
+                                schedule.schedule!.presetItems!.length <=
+                                        completes
+                                    ? "done"
+                                    : "undone";
+
+                            if (newState == "done") {
+                              showEndDialog(
+                                context,
+                                "오운완!",
+                                "오늘도 운동마친 당신은 보람찬 하루를 보낸겁니다!",
+                                saveSchedule,
+                                newState,
+                              );
+                            } else {
+                              showEndDialog(
+                                context,
+                                "오-난",
+                                "오늘도 운동한 당신은 보람찬 하루를 보낸겁니다!",
+                                saveSchedule,
+                                newState,
+                              );
+                            }
+                          },
+                        ),
+                      ),
+                    ),
+                    const CustomTimer(),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 40, bottom: 20),
+                      child: Text(
+                        "타이머의 프리셋은 모든 곳에서 공통으로 사용되며, 최대 4개까지 등록이 가능합니다.",
+                        style: TextStyle(
                           color: Theme.of(context)
                               .colorScheme
                               .onBackground
                               .withOpacity(.5),
-                          size: 12 * getScaleFactorFromWidth(context),
+                          fontSize: 8 * getScaleFactorFromWidth(context),
+                          fontFamily: 'SpoqaHanSans',
+                          fontWeight: FontWeight.w500,
                         ),
-                        onPressEvent: () =>
-                            Navigator.popAndPushNamed(context, "/home"),
                       ),
                     ),
-                  ),
-                  ScheduleDetailBody(
-                    preset: schedule.schedule!,
-                    daily: schedule.daily!,
-                    onComplete: increaseCompletes,
-                    onUnComplete: decreaseCompletes,
-                  ),
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: Padding(
-                      padding: const EdgeInsets.only(right: 40, bottom: 40),
-                      child: RoundedButtonMedium(
-                        text: "완료",
-                        onPressEvent: () {
-                          if (DateTypes.DAYS[DateTime.now().weekday] !=
-                              schedule.daily) {
-                            notAvailableToday(context);
-                            return;
-                          }
-                          final items = schedule.schedule!.presetItems;
-                          if (items == null) {
-                            Navigator.popAndPushNamed(context, "/home");
-                          }
-
-                          final newState =
-                              schedule.schedule!.presetItems!.length <=
-                                      completes
-                                  ? "done"
-                                  : "undone";
-
-                          if (newState == "done") {
-                            showEndDialog(
-                              context,
-                              "오운완!",
-                              "오늘도 운동마친 당신은 보람찬 하루를 보낸겁니다!",
-                              saveSchedule,
-                              newState,
-                            );
-                          } else {
-                            showEndDialog(
-                              context,
-                              "오-난",
-                              "오늘도 운동한 당신은 보람찬 하루를 보낸겁니다!",
-                              saveSchedule,
-                              newState,
-                            );
-                          }
-                        },
-                      ),
-                    ),
-                  ),
-                  const CustomTimer(),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 40, bottom: 20),
-                    child: Text(
-                      "타이머의 프리셋은 모든 곳에서 공통으로 사용되며, 최대 4개까지 등록이 가능합니다.",
-                      style: TextStyle(
-                        color: Theme.of(context)
-                            .colorScheme
-                            .onBackground
-                            .withOpacity(.5),
-                        fontSize: 8 * getScaleFactorFromWidth(context),
-                        fontFamily: 'SpoqaHanSans',
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
