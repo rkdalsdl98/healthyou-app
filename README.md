@@ -17,6 +17,8 @@
 
 >안드로이드 전용 어플로 구글플레이 스토어에 등록 되어 있으며, 해당 소스코드를 가져다 인용하시면 오히려 감사드립니다.  
 
+[Healthyou APP](https://play.google.com/store/apps/details?id=com.hsy.healthyou)  
+
 # Sequence Diagram  
 
 <div align="center">
