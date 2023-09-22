@@ -15,9 +15,7 @@
   
 >서버와 앱 두가지를 모두 혼자서 하다보니 코드관리와 오랜만에 코드를 열어 보았을때 최대한 헷갈리지 않도록 하고, 서버와 동일한 아키텍처를 적용하여 코드 구현을 하려고 초기에 생각 했으나 Flutter에서는 별로 적합하지 않다고 판단하여 사용하지 않았습니다.  
 
->안드로이드 전용 어플로 구글플레이 스토어에 등록 되어 있으며, 해당 소스코드를 가져다 인용하시면 오히려 감사드립니다.  
-
-[Healthyou APP](https://play.google.com/store/apps/details?id=com.hsy.healthyou)  
+>안드로이드 전용 어플로 구글플레이 스토어에 등록 되어 있으며, 해당 소스코드를 가져다 인용하시면 오히려 감사드립니다.   
 
 # Sequence Diagram  
 
@@ -33,7 +31,9 @@
 
 피그마에 현재 어플에 구현되어있는 UI가 적용되어 있는 부분이 상당수가 있습니다.
 
+# APP  
+[Healthyou APP](https://play.google.com/store/apps/details?id=com.hsy.healthyou) 
+
 # 주저리  
 
-Diagram, Pattern, Architecture 등등 모자란 부분이 많고 미숙한 부분도 많습니다.  
-구글 플레이 스토어에 게시 검토중에 있으며 활성 되면 주소도 업데이트 하겠습니다.
+Diagram, Pattern, Architecture 등등 모자란 부분이 많고 미숙한 부분도 많습니다.
