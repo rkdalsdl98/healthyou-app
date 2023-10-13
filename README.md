@@ -17,14 +17,6 @@
 
 >안드로이드 전용 어플로 구글플레이 스토어에 등록 되어 있으며, 해당 소스코드를 가져다 인용하시면 오히려 감사드립니다.   
 
-# Sequence Diagram  
-
-<div align="center">
-  <img src="https://github.com/rkdalsdl98/healthyou-server/assets/77562358/bae23c1a-1e96-40f4-82e6-5ffbf6f41140">
-  <img src="https://github.com/rkdalsdl98/healthyou-server/assets/77562358/333640b0-62f6-4fbb-8efb-d2c69f19629d">
-  <img src="https://github.com/rkdalsdl98/healthyou-server/assets/77562358/a4165bff-47d3-4849-ae53-9b28bbccc040">
-</div>
-
 # Figma  
 
 [Healthyou! Figma](https://www.figma.com/file/5P0mcLR7LmEWwI0lT2kEmt/Heathyou?type=design&node-id=1-2&mode=design&t=GsyzifDPLn7kGGrf-0)  
@@ -32,11 +24,16 @@
 피그마에 현재 어플에 구현되어있는 UI가 적용되어 있는 부분이 상당수가 있습니다.
 
 # APP  
-[Healthyou APP](https://play.google.com/store/apps/details?id=com.hsy.healthyou) 
+[Healthyou APP](https://play.google.com/store/apps/details?id=com.hsy.healthyou)  
 
-# 주저리  
+# Demo
 
-Diagram, Pattern, Architecture 등등 모자란 부분이 많고 미숙한 부분도 많습니다.  
+<div align="center">
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/cbddbc35-700d-41eb-8365-07999ceb8ca5"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/dd37b0ea-6510-422b-822e-ff789324e9a4">  
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/224f4f82-68d1-44e6-9b9a-b412614145cd"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/474b8e65-6ceb-42b2-bdd9-1613d27251f4">  
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/4537e9ee-24f2-49df-8cb7-cdc8fb30e221"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/451e5bc3-fcda-4734-b397-f726e5817d88">  
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/3a2a957c-1393-42fe-a958-94f13c26771c">
+</div>
 
 # 수정, 업데이트  
 
