@@ -110,11 +110,11 @@ class MealRepository {
     _presets.update(
       presetInfo.index!,
       (prev) {
-        presetInfo.addOrder(prev.length);
+        presetInfo.addOrder(prev.length + 1);
         return [...prev, presetInfo];
       },
       ifAbsent: () {
-        presetInfo.addOrder(_presets.length);
+        presetInfo.addOrder(_presets.length + 1);
         return [presetInfo];
       },
     );
@@ -131,6 +131,8 @@ class MealRepository {
             'fat': e.fat!,
             'protein': e.protein!,
           });
+        } else if (e.order! > order) {
+          e.order = e.order! - 1;
         }
         return res;
       });
@@ -181,7 +183,7 @@ class MealRepository {
     _presets = temp;
   }
 
-  void clearPresets() {
+  clearPresets() {
     _presets = {};
     _presetsStates = {};
     _historys = [];
@@ -190,11 +192,11 @@ class MealRepository {
     LocalDataManager.saveStringData("meal-historys", null);
   }
 
-  Future<void> reset() async {
+  reset() {
     _presetsStates = {};
     _historys = [];
-    await LocalDataManager.saveStringData("meal-states", null);
-    await LocalDataManager.saveStringData("meal-historys", null);
+    LocalDataManager.saveStringData("meal-states", null);
+    LocalDataManager.saveStringData("meal-historys", null);
   }
 
   void savePresets() {

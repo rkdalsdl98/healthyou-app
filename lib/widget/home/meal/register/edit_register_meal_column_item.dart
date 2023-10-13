@@ -35,6 +35,7 @@ class RegisterMealDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(order);
     return Dialog(
       insetPadding: const EdgeInsets.symmetric(horizontal: 40),
       child: Container(

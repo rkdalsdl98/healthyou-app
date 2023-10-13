@@ -21,7 +21,6 @@ class RegisterMealColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     presetInfos = presetInfos ?? [];
-
     return ListView(
       children: [
         Column(
