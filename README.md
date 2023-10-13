@@ -29,10 +29,10 @@
 # Demo
 
 <div align="center">
-  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/cbddbc35-700d-41eb-8365-07999ceb8ca5"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/dd37b0ea-6510-422b-822e-ff789324e9a4">  
-  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/224f4f82-68d1-44e6-9b9a-b412614145cd"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/474b8e65-6ceb-42b2-bdd9-1613d27251f4">  
-  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/4537e9ee-24f2-49df-8cb7-cdc8fb30e221"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/451e5bc3-fcda-4734-b397-f726e5817d88">  
-  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/3a2a957c-1393-42fe-a958-94f13c26771c">
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/cbddbc35-700d-41eb-8365-07999ceb8ca5" width="200" height="355"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/dd37b0ea-6510-422b-822e-ff789324e9a4" width="200" height="355">  
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/224f4f82-68d1-44e6-9b9a-b412614145cd" width="200" height="355"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/474b8e65-6ceb-42b2-bdd9-1613d27251f4" width="200" height="355">  
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/4537e9ee-24f2-49df-8cb7-cdc8fb30e221" width="200" height="355"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/451e5bc3-fcda-4734-b397-f726e5817d88" width="200" height="355">  
+  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/3a2a957c-1393-42fe-a958-94f13c26771c" width="200" height="355">
 </div>
 
 # 수정, 업데이트  
