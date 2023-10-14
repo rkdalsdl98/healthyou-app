@@ -1,9 +1,8 @@
 <div>
   <img width="125" height="125" src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e">  
-  <h1>Healthyou</h1>
+  <h1>Healthyou
+  📚 STACKS</h1>
 </div>
-
-<h1>📚 STACKS</h1>
 
 <div>
   <img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"> <img src="https://img.shields.io/badge/dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
