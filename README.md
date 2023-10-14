@@ -19,7 +19,22 @@
 + Provider  
 
 # Database  
-+ SharedPreferences (Local)  
+SharedPreferences (Local)  
++ 사용자가 생성한 프리셋, 식사 루틴 등등 정보는 모두 로컬에 저장 된다.
++ 각각의 레포지토리는 저장된 사용자 정보를 불러와 동기화 한다.
++ Model은 저장소에서 사용될 toJson 함수와 ViewModel에서 사용될 fromJson으로 유동적인 데이터 전환을 한다.  
+
+# Notification  
+FlutterLocalNotifications  
+SharedPreferences (Local)  
++ 사용자가 지정한 시간에 알림 메세지를 보내고 저장하며 관리 한다.
++ 알림은 생성시에 고유한 아이디를 부여하여 관리 된다.
++ 달력에 알림은 메모와 함께 저장되며, 어플 실행시 정보를 불러와 동기화 한다.
++ 운동, 식사 알림은 기본적으로 제공하는 값이 있으며, 사용자 정의로 인한 수정이 발생 할 경우 해당 정보를 저장하고 동기화시 저장된 정보를 불러온다.  
+
+# Reset  
+WidgetsBinding  
++ 어플 실행시 옵저버를 생성해 어플의 상태를 체크 하고, 날짜가 바뀔 경우 필수 정보를 제외한 모든 정보를 초기화 한다.
 
 # Tools  
   ## Figma  
