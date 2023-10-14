@@ -1,4 +1,4 @@
-<a href="https://play.google.com/store/apps/details?id=com.hsy.healthyou"><img width="125" height="125" src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e"></a>
+<a href="https://play.google.com/store/apps/details?id=com.hsy.healthyou"><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e"></a>
 
 <h1>📚 STACKS</h1>
 
