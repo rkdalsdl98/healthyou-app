@@ -1,4 +1,9 @@
-<img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e">
+<a
+width="125"
+height="125"
+border-radius: 50%;
+display: inline-block;
+><img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e"></a>
 
 <h1>📚 STACKS</h1>
 
@@ -20,12 +25,12 @@
 + SharedPreferences (Local)  
 
 # Tools  
-## Figma  
+  ## Figma  
 
-[Healthyou! Figma](https://www.figma.com/file/5P0mcLR7LmEWwI0lT2kEmt/Heathyou?type=design&node-id=1-2&mode=design&t=GsyzifDPLn7kGGrf-0)  
+  [Healthyou! Figma](https://www.figma.com/file/5P0mcLR7LmEWwI0lT2kEmt/Heathyou?type=design&node-id=1-2&mode=design&t=GsyzifDPLn7kGGrf-0)  
 
-## Rive  
-+ 일부 애니메이션은 해당 툴로 제작 되었습니다.  
+  ## Rive  
+  + 일부 애니메이션은 해당 툴로 제작 되었습니다.  
 
 # Demo
 
