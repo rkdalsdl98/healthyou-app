@@ -1,3 +1,13 @@
+<style>
+.circle {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background: #333;
+}
+</style>
+
+<div class="circle"></div>
 <a><img border-radius="50%" display="inline-block" width="125" height="125" src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e"></a>
 
 <h1>📚 STACKS</h1>
