@@ -1,6 +1,6 @@
 <div>
   <img width="125" height="125" src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e">  
-  <h1>Healthyou<br>📚 STACKS</br></h1>
+  <h1>Healthyou<br><br>📚 STACKS</br></br></h1>
 </div>
 
 <div>
