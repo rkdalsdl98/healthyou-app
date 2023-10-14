@@ -1,4 +1,4 @@
-<a href="https://play.google.com/store/apps/details?id=com.hsy.healthyou"><img border-radius="50%" display="inline-block" width="125" height="125" src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e"></a>
+<a href="https://play.google.com/store/apps/details?id=com.hsy.healthyou" target="_blank"><img border-radius="50%" display="inline-block" width="125" height="125" src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/55e241d9-0aa9-47d1-9eac-391e117d3e2e"></a>
 
 <h1>📚 STACKS</h1>
 
@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"> <img src="https://img.shields.io/badge/dart-0175C2?style=for-the-badge&logo=dart&logoColor=white">
 </div>  
 <div>
-  <a href="https://github.com/rkdalsdl98/healthyou-app"><img src="https://img.shields.io/badge/Platform-Android%2B-green.svg?style=flat"></a> <a href="https://android-arsenal.com/api?level=21#l21"><img src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"></a> <a href="https://play.google.com/store/apps/details?id=com.hsy.healthyou"><img src="https://img.shields.io/badge/Google Play-Download%2B-orange.svg?style=flat"></a>
+  <a href="https://github.com/rkdalsdl98/healthyou-app" target="_blank"><img src="https://img.shields.io/badge/Platform-Android%2B-green.svg?style=flat"></a> <a href="https://android-arsenal.com/api?level=21#l21" target="_blank"><img src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"></a> <a href="https://play.google.com/store/apps/details?id=com.hsy.healthyou" target="_blank"><img src="https://img.shields.io/badge/Google Play-Download%2B-orange.svg?style=flat"></a>
 </div>  
 
 # 개요  
