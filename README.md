@@ -1,9 +1,12 @@
-<div align=center><h1>📚 STACKS</h1></div>  
+<h1>📚 STACKS</h1>
 
-<div align="center">
+<div>
   <img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
-  <img src="https://github.com/rkdalsdl98/healthyou-app/assets/77562358/a2f4646e-aed2-4eb3-a307-7afb35ebcb44" width="50">
+</div>  
+<div>
+  <a href="https://android-arsenal.com/api?level=21#l21"><img src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"></a>
 </div>
+
 
 # 개요  
 
